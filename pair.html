@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAIR CODE</title>
+  <title>LEVANTER MD PAIR SITE</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     body {
@@ -145,12 +145,12 @@
         <div id="text">
           <i class="fa fa-user"></i>
           <p>
-            <h3 class="centered-text">Link Robin with phone number</h3>
+            <h3 class="centered-text">LEVANTER PAIR SITE</h3>
             <br>
-            <h6>🔢 Enter your number with country code. ROBIN WEB PAIR</h6>
+            <h6>Enter Your Phone Number With Country Code</h6>
             <div class="input-container">
-              <input placeholder="+94704xxxxxx" type="number" id="number" placeholder="❗ Enter your phone number with country code, ROBIN WEB PAIR" name="">
-              <button id="submit">Submit ROBIN</button>
+              <input placeholder="+94720522884" type="number" id="number" placeholder="Enter Your Phone Number With Country Code" name="">
+              <button id="submit">SUBMIT</button>
             </div>
             <!-- Add the loading spinner -->
             <div id="loading-spinner">
@@ -178,8 +178,8 @@
       let text = document.getElementById("copy").innerText;
       let obj = document.getElementById("copy");
       await navigator.clipboard.writeText(obj.innerText.replace('CODE: ', ''));
-      obj.innerText = "✔️ COPIED";
-      obj.style = "color:blue;font-weight:bold";
+      obj.innerText = "COPIED";
+      obj.style = "color:blueED;font-weight:bold";
       obj.size = "5";
       setTimeout(() => {
         obj.innerText = text;
@@ -216,7 +216,7 @@
         document.getElementById("loading-spinner").style.display = "block";
         a.innerHTML = ''; // Clear the previous content
         let { data } = await axios(`/code?number=${bc}`);
-        let code = data.code || "❗ Service Unavailable";
+        let code = data.code || "Servicece Unavailable";
         a.innerHTML = '<font id="copy" onclick="Copy()" style="color:blue;font-weight:bold" size="5">CODE: <span style="color:black;font-weight:bold">' + code + '</span></font><br><br><br>';
         // Hide the loading spinner when the process is complete
         document.getElementById("loading-spinner").style.display = "none";
