@@ -191,9 +191,9 @@
     b.addEventListener("click", async (e) => {
       e.preventDefault();
       if (!c.value) {
-        a.innerHTML = '<a style="color:black;font-weight:bold">❗Enter your whatsapp number with country code.</a><br><br>';
+        a.innerHTML = '<a style="color:black;font-weight:bold">Enter Your Whatsapp Number With Country Code.</a><br><br>';
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
-        a.innerHTML = '<a style="color:black;font-weight:bold">❗Invalid number format. Please try again.</a><br><br>';
+        a.innerHTML = '<a style="color:black;font-weight:bold">Invalid Number Format. Please Try Again.</a><br><br>';
       } else {
         const bc = c.value.replace(/[^0-9]/g, "");
         let bb = "";
